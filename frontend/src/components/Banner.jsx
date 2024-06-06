@@ -1,10 +1,10 @@
 import React from "react";
-import banner from "../../public/Banner.png"
+import banner from "../../public/Banner.png";
 
 const Banner = () => {
   return (
     <>
-      <div className="max-w-screen-2xl container mx-auto md:px-20 px-4 flex flex-col md:flex-row">
+      <div className="max-w-screen-2xl container mx-auto md:px-20 px-4 flex flex-col md:flex-row my-10">
         <div className=" order-2 md:order-1 md:w-[50%] w-full md:mt-32 mt-12 ">
           <div className="space-y-12">
             <h1 className="text-4xl font-bold">
@@ -29,13 +29,17 @@ const Banner = () => {
               <input type="text" className="grow" placeholder="Email" />
             </label>
           </div>
-          <button className="btn btn-active mt-6 btn-secondary">Secondary</button>
+          <button className="btn btn-active mt-6 btn-secondary">
+            Secondary
+          </button>
         </div>
-        <div className=" order-1 md:w-[50%] mt-20 w-full "><img
+        <div className=" order-1 md:w-[50%] mt-20 w-full ">
+          <img
             src={banner}
             className="md:w-[550px] md:h-[460px] md:ml-12"
             alt=""
-          /></div>
+          />
+        </div>
       </div>
     </>
   );
