@@ -1,5 +1,7 @@
 import React from "react";
 import list from "../public/list.json"
+import Cards from "../src/components/Cards"
+import {Link} from "react-router-dom"
 
 const Course = () => {
   return (
@@ -19,13 +21,17 @@ const Course = () => {
             dignissimos beatae consequuntur quas cumque quidem, quasi dolor
             asperiores quaerat quibusdam.
           </p>
+          <Link to="/">
           <button className="bg-pink-500 text-white px-4 py-2 rounded-md hover:bg-pink-700 duration-300 mt-6">
             Back
           </button>
+          </Link>
         </div>
-        <div>
+        <div className="mt-12 grid grid-cols-1 md:grid-cols-4">
             {
-                
+                list.map((item)=>(
+                  <Cards key={item.id} item={item}/>
+                ))
             }
         </div>
       </div>
