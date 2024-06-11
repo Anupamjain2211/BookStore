@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import Login from "./Login";
 import { useForm } from "react-hook-form";
 
-
 const Signup = () => {
   const {
     register,
@@ -25,61 +24,73 @@ const Signup = () => {
               >
                 ✕
               </Link>
-            <h3 className="font-bold text-lg">Signup</h3>
-            <div className="mt-4 space-y-2">
-              <span>Name</span>
-              <br />
-              <input
-                type="text"
-                placeholder="Enter your fullname"
-                className="w-80 py-1 px-3 border rounded-md outline-none"
-                {...register("name", { required: true })}
-
-              />
-              <br/>
-              {errors.name && <span className="text-sm text-red-500">Name field is required</span>}
-            </div>
-            <div className="mt-4 space-y-2">
-              <span>Email</span>
-              <br />
-              <input
-                type="email"
-                placeholder="Enter your email"
-                className="w-80 py-1 px-3 border rounded-md outline-none"
-                {...register("email", { required: true })}
-              /><br/>
-               {errors.email && <span className="text-sm text-red-500">Email field is required</span>}
-            </div>
-            <div className="mt-4 space-y-2">
-              <span>Password</span>
-              <br />
-              <input
-                type="password"
-                placeholder="Enter your password"
-                className="w-80 py-1 px-3 border rounded-md outline-none"
-                {...register("password", { required: true })}
-              /><br/>
-               {errors.password && <span className="text-sm text-red-500">Password field is required</span>}
-            </div>
-            <div className="flex justify-around mt-8">
-              <button className="bg-pink-500 text-white rounded-md px-5 py-1 hover:bg-pink-700 duration-200">
-                Signup
-              </button>
-              <p className="text-xl">
-                Have Account?
-                <button
-                  className="underline text-blue-500 cursor-pointer"
-                  onClick={() =>
-                    document.getElementById("my_modal_3").showModal()
-                  }
-                >
-                  Login
+              <h3 className="font-bold text-lg">Signup</h3>
+              <div className="mt-4 space-y-2">
+                <span>Name</span>
+                <br />
+                <input
+                  type="text"
+                  placeholder="Enter your fullname"
+                  className="w-80 py-1 px-3 border rounded-md outline-none"
+                  {...register("name", { required: true })}
+                />
+                <br />
+                {errors.name && (
+                  <span className="text-sm text-red-500">
+                    Name field is required
+                  </span>
+                )}
+              </div>
+              <div className="mt-4 space-y-2">
+                <span>Email</span>
+                <br />
+                <input
+                  type="email"
+                  placeholder="Enter your email"
+                  className="w-80 py-1 px-3 border rounded-md outline-none"
+                  {...register("email", { required: true })}
+                />
+                <br />
+                {errors.email && (
+                  <span className="text-sm text-red-500">
+                    Email field is required
+                  </span>
+                )}
+              </div>
+              <div className="mt-4 space-y-2">
+                <span>Password</span>
+                <br />
+                <input
+                  type="password"
+                  placeholder="Enter your password"
+                  className="w-80 py-1 px-3 border rounded-md outline-none"
+                  {...register("password", { required: true })}
+                />
+                <br />
+                {errors.password && (
+                  <span className="text-sm text-red-500">
+                    Password field is required
+                  </span>
+                )}
+              </div>
+              <div className="flex justify-around mt-8">
+                <button className="bg-pink-500 text-white rounded-md px-5 py-1 hover:bg-pink-700 duration-200">
+                  Signup
                 </button>
-                <Login/>
-              </p>
-            </div>
+                <p className="text-xl">
+                  Have Account?
+                  <button
+                    className="underline text-blue-500 cursor-pointer"
+                    onClick={() =>
+                      document.getElementById("my_modal_3").showModal()
+                    }
+                  >
+                    Login
+                  </button>
+                  <Login />
+                </p>
+              </div>
             </form>
-
           </div>
         </div>
       </div>
