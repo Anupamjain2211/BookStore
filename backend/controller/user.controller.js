@@ -10,4 +10,4 @@ export const signup=(req,res)=>{
  } catch (error) {
     
  }
-}
+} 
