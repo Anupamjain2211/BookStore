@@ -25,7 +25,7 @@ const Signup = () => {
         alert("Signup Successfully")
       }
     }).catch((err)=>{
-      alert("Error: "+ err)
+      alert("Error: "+ err) 
     })
   }
   return (
