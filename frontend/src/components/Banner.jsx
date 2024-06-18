@@ -35,7 +35,7 @@ const Banner = () => {
         </div> 
         <div className=" order-1 md:w-[50%] mt-20 w-full ">
           <img
-            src={banner}
+            src={banner} 
             className="md:w-[550px] md:h-[460px] md:ml-12"  
             alt="" 
           />
