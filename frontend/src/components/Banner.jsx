@@ -30,10 +30,10 @@ const Banner = () => {
             </label>
           </div>
           <button className="btn btn-active mt-6 btn-secondary">
-            Get Started
+            Get Started  
           </button>
         </div> 
-        <div className=" order-1 md:w-[50%] mt-20 w-full ">
+        <div className=" order-1 md:w-[50%] mt-20 w-full ">  
           <img
             src={banner} 
             className="md:w-[550px] md:h-[460px] md:ml-12"   
